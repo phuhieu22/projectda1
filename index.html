@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/dist/css/adminlte.min.css?v=3.2.0">
+    <script data-cfasync="false"
+        nonce="dd36c48f-9138-4ccc-90c5-3677fcea27c4">try { (function (w, d) { !function (cJ, cK, cL, cM) { if (cJ.zaraz) console.error("zaraz is loaded twice"); else { cJ[cL] = cJ[cL] || {}; cJ[cL].executed = []; cJ.zaraz = { deferred: [], listeners: [] }; cJ.zaraz._v = "5815"; cJ.zaraz._n = "dd36c48f-9138-4ccc-90c5-3677fcea27c4"; cJ.zaraz.q = []; cJ.zaraz._f = function (cN) { return async function () { var cO = Array.prototype.slice.call(arguments); cJ.zaraz.q.push({ m: cN, a: cO }) } }; for (const cP of ["track", "set", "debug"]) cJ.zaraz[cP] = cJ.zaraz._f(cP); cJ.zaraz.init = () => { var cQ = cK.getElementsByTagName(cM)[0], cR = cK.createElement(cM), cS = cK.getElementsByTagName("title")[0]; cS && (cJ[cL].t = cK.getElementsByTagName("title")[0].text); cJ[cL].x = Math.random(); cJ[cL].w = cJ.screen.width; cJ[cL].h = cJ.screen.height; cJ[cL].j = cJ.innerHeight; cJ[cL].e = cJ.innerWidth; cJ[cL].l = cJ.location.href; cJ[cL].r = cK.referrer; cJ[cL].k = cJ.screen.colorDepth; cJ[cL].n = cK.characterSet; cJ[cL].o = (new Date).getTimezoneOffset(); if (cJ.dataLayer) for (const cT of Object.entries(Object.entries(dataLayer).reduce(((cU, cV) => ({ ...cU[1], ...cV[1] })), {}))) zaraz.set(cT[0], cT[1], { scope: "page" }); cJ[cL].q = []; for (; cJ.zaraz.q.length;) { const cW = cJ.zaraz.q.shift(); cJ[cL].q.push(cW) } cR.defer = !0; for (const cX of [localStorage, sessionStorage]) Object.keys(cX || {}).filter((cZ => cZ.startsWith("_zaraz_"))).forEach((cY => { try { cJ[cL]["z_" + cY.slice(7)] = JSON.parse(cX.getItem(cY)) } catch { cJ[cL]["z_" + cY.slice(7)] = cX.getItem(cY) } })); cR.referrerPolicy = "origin"; cR.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(cJ[cL]))); cQ.parentNode.insertBefore(cR, cQ) };["complete", "interactive"].includes(cK.readyState) ? zaraz.init() : cJ.addEventListener("DOMContentLoaded", zaraz.init) } }(w, d, "zarazData", "script"); window.zaraz._p = async bb => new Promise((bc => { if (bb) { bb.e && bb.e.forEach((bd => { try { const be = d.querySelector("script[nonce]"), bf = be?.nonce || be?.getAttribute("nonce"), bg = d.createElement("script"); bf && (bg.nonce = bf); bg.innerHTML = bd; bg.onload = () => { d.head.removeChild(bg) }; d.head.appendChild(bg) } catch (bh) { console.error(`Error executing script: ${bd}\n`, bh) } })); Promise.allSettled((bb.f || []).map((bi => fetch(bi[0], bi[1])))) } bc() })); zaraz._p({ "e": ["(function(w,d){})(window,document)"] }); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="icon" href="img/ekoeats.jpg">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body >
+    <nav class=" navbar navbar-expand-md navbar-light navbar-white" style="background-color:rgb(186, 223, 240) ;">
+        <div class="container">
+            <a href="../../index3.html" class="navbar-brand">
+                <img src="./assets/img/z6003126580761_1dc5abb4974c3742684c7118e342bca9.jpg"
+                    class="brand-image img-circle elevation-3" style="width: 80px; height: 80px;" alt="AdminLTE Logo">
+            </a>
+
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index3.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Bán chạy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" class="nav-link dropdown-toggle">Sản Phẩm</a>
+                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="#" class="dropdown-item">Laptop Asus</a></li>
+                            <li><a href="#" class="dropdown-item">Laptop Dell</a></li>
+                            <li><a href="#" class="dropdown-item">Laptop Lenovo</a></li>
+                            <li><a href="#" class="dropdown-item">Laptop Acer</a></li>
+                            <li><a href="#" class="dropdown-item">Laptop gaming</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- SEARCH FORM -->
+                <form class="form-inline ml-0 ml-md-3">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="header-right">
+                    <ul>
+                        <li><a href="login.html"><i class="fa-solid fa-user icon fa-lg"></i></a></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+                        <li><i class="fa-solid fa-bars fa-lg"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Start header -->
+
+    <!-- End header -->
+
+    <!-- Start content -->
+    <section>
+            <!-- món ưu đãi -->
+            <div id="sale" class="container ">
+                <h2 class="mg-2">ƯU ĐÃI</h2>
+                <div class="menu-sale">
+    
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                     <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                     <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div> 
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- món mới -->
+            <div id="new-menu" class="container new-menu">
+                <h2>HÀNG MỚI</h2>
+                <div class="menu-sale">
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                    <div class="item-menu">
+                        <img width="100%" src="./assets/img/th (3).jpg" alt="">
+                        <p>Laptop Del</p>
+                        <p>45.000₫ <del>60.000₫</del></p>
+                        <p>Số Lượng:100</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <button>Thêm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- combo 1 người -->
+        
+            <!-- combo team -->
+      
+    </section>
+    <!-- End content -->
+
+    <!-- Start footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-title">
+                    <h3>Danh Mục Labtop</h3>
+                    <ul>
+                        <li><a href="#" class="dropdown-item">Laptop Asus</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop Dell</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop Lenovo</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop Acer</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop gaming</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col">
+
+                <div class="footer-col">
+                    <div class="footer-title">
+                        <h3>Liên hệ shop SUPERBEE</h3>
+                        <ul>
+                            <li><a href="#">Theo dõi đơn hàng</a></li>
+                            <li><a href="#">Liên hệ shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class=""></div>
+                    <div class="copyright">SUPERBEE</div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./assets/dist/js/adminlte.min.js?v=3.2.0"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./assets/dist/js/demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 800); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
